@@ -2,11 +2,11 @@
 Summit UMC 2025 Group42 - SVM Heart Disease Dataset, KFold(k=10) x Leave-P-Out(p=2)
 
 
-##Documentação do Projeto de Classificação de Doença Cardíaca
+##Documentação do Projeto de Classificação de Doença Cardíaca##
 
 Este projeto utiliza o algoritmo de Machine Learning Support Vector Machine (SVM) para classificar a presença de doença cardíaca com base em um conjunto de dados do UCI (Universidade da Califórnia em Irvine). O notebook Colab executa duas abordagens de validação cruzada para avaliar o modelo: K-Fold e Leave-P-Out (p=2).
 
-##Estrutura do Projeto:
+##Estrutura do Projeto:##
 
 O projeto é dividido em duas seções principais, cada uma explorando uma técnica de validação cruzada diferente para garantir a robustez e a confiabilidade dos resultados do modelo. Ambas as seções seguem um fluxo de trabalho similar:
 
