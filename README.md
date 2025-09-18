@@ -2,10 +2,14 @@
 Summit UMC 2025 Group42 - SVM Heart Disease Dataset, KFold(k=10) x Leave-P-Out(p=2)
 
 
-Documentação do Projeto de Classificação de Doença Cardíaca
+##Documentação do Projeto de Classificação de Doença Cardíaca
+
 Este projeto utiliza o algoritmo de Machine Learning Support Vector Machine (SVM) para classificar a presença de doença cardíaca com base em um conjunto de dados do UCI (Universidade da Califórnia em Irvine). O notebook Colab executa duas abordagens de validação cruzada para avaliar o modelo: K-Fold e Leave-P-Out (p=2).
-Estrutura do Projeto
+
+##Estrutura do Projeto:
+
 O projeto é dividido em duas seções principais, cada uma explorando uma técnica de validação cruzada diferente para garantir a robustez e a confiabilidade dos resultados do modelo. Ambas as seções seguem um fluxo de trabalho similar:
+
  * Importação de Bibliotecas: Carrega as bibliotecas necessárias, como Pandas para manipulação de dados, Scikit-learn para machine learning, e Matplotlib/Seaborn para visualização.
  * Carregamento e Pré-processamento de Dados: Lê o arquivo heart_disease.csv, converte todos os valores para numéricos, tratando dados faltantes com NaN (Not a Number), e transforma a variável alvo (num) em um formato binário (0 = sem doença, 1 = com doença).
  * Divisão dos Dados: Separa o conjunto de dados em variáveis independentes (X) e a variável alvo (y). Em seguida, divide esses dados em conjuntos de treino (80%) e teste (20%) usando train_test_split, com stratify=y para manter a proporção de classes em ambos os conjuntos. O random_state=42 garante a reprodutibilidade dos resultados.
@@ -33,4 +37,3 @@ No conjunto de teste, o modelo otimizado com Leave-P-Out (kernel RBF) obteve uma
 A matriz de confusão revela as diferenças mais significativas:
  * O modelo K-Fold teve mais falsos positivos (5), o que significa que mais pessoas saudáveis foram incorretamente diagnosticadas como doentes.
  * O modelo Leave-P-Out teve um número menor de falsos positivos (2) mas um número maior de falsos negativos (11), indicando que ele errou mais ao não identificar pacientes que realmente tinham a doença. Dependendo da aplicação, a escolha entre esses modelos dependeria do custo associado a cada tipo de erro.
- * 
